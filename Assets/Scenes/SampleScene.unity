@@ -1080,7 +1080,7 @@ Transform:
   m_GameObject: {fileID: 955243154}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.8, y: 2.1, z: -6.112027}
+  m_LocalPosition: {x: -62.8, y: -1, z: -6.112027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1111,6 +1111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1018003540}
   - component: {fileID: 1018003539}
+  - component: {fileID: 1018003541}
   m_Layer: 0
   m_Name: Scufed mario
   m_TagString: Untagged
@@ -1179,12 +1180,27 @@ Transform:
   m_GameObject: {fileID: 1018003538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -101.6, y: -35.2, z: 0}
+  m_LocalPosition: {x: -32.5, y: -38.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1018003541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018003538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43db38415daa5764bb7a23c33a956494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeedPerSecond: 50
+  GravityPerSecond: 35
+  GroundLevel: -39
 --- !u!1 &1155867822
 GameObject:
   m_ObjectHideFlags: 0
