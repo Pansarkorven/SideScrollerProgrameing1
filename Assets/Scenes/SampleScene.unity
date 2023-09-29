@@ -1198,9 +1198,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43db38415daa5764bb7a23c33a956494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JumpingState: 1
   MovementSpeedPerSecond: 50
-  GravityPerSecond: 35
+  GravityPerSecond: 60
   GroundLevel: -39
+  JumpSpeedFactor: 2
+  JumpMaxHeight: 50
 --- !u!1 &1155867822
 GameObject:
   m_ObjectHideFlags: 0
