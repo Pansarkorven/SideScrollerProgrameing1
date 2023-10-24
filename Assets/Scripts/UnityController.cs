@@ -4,68 +4,67 @@ using UnityEngine;
 
 public class UnityController : MonoBehaviour
 {
-    public Rigidbody2D Myrigidbody2D = null;
+    //Refrence to rigidbody on same object
+    public Rigidbody2D myRigidBody = null;
 
-    public CharacterState JumpingState = CharacterState.Airborne; // är karaktären på marken eller i luften?
+    public CharacterState JumpingState = CharacterState.Airborne;
+    //Is Our character on the ground or in the air?
 
+    //Gravity
+    //public float GravityPerSecond = 160.0f; //Falling Speed
+    //public float GroundLevel = 0.0f; //Ground Value
 
-
-    public float MovementSpeedPerSecond = 120.0f; // gå
-    public float GravityPerSecond = 140.0f; // falla
-    public float GroundLevel = 0.0f; // grunden
-
-    //hoppa
-    public float JumpSpeedFactor = 3.0f; // Hur mycket snabbare hoppet är
-    public float JumpMaxHeight = 150;
+    //Jump
+    public float JumpSpeedFactor = 3.0f; //How much faster is the jump than the movespeed?
+    public float JumpMaxHeight = 150.0f;
+    [SerializeField]
     private float JumpHeightDelta = 0.0f;
-    
+
+    //Movement
+    public float MovementSpeedPerSecond = 10.0f; //Movement Speed
 
 
-    // Update is called once per frame
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W) && JumpingState == CharacterState.Grounded)
+        {
+            JumpingState = CharacterState.Jumping; //Set character to jumping
+            JumpHeightDelta = 0.0f; 
+        }
+    }
+
+
     void FixedUpdate()
     {
-        if (transform.position.y <= GroundLevel)
-        {
-            Vector3 characterPosition = transform.position;
-            characterPosition.y = GroundLevel;
-            transform.position = characterPosition;
-            JumpingState = CharacterState.Grounded;
-        }
-
+        Vector3 characterVelocity = myRigidBody.velocity;
+        characterVelocity.x = 0.0f;
 
         if (JumpingState == CharacterState.Jumping)
         {
-            Vector3 characterPosition = transform.position;
-            float totalJumpMovementThisFrame = MovementSpeedPerSecond * JumpSpeedFactor * Time.deltaTime;
-            characterPosition.y += totalJumpMovementThisFrame;
-            transform.position = characterPosition;
-            JumpHeightDelta += totalJumpMovementThisFrame;
+            float totalJumpMovementThisFrame = MovementSpeedPerSecond * JumpSpeedFactor;
+            characterVelocity.y = totalJumpMovementThisFrame;
+
+            JumpHeightDelta += totalJumpMovementThisFrame * Time.deltaTime;
+
             if (JumpHeightDelta >= JumpMaxHeight)
             {
                 JumpingState = CharacterState.Airborne;
                 JumpHeightDelta = 0.0f;
+                characterVelocity.y = 0.0f;
             }
         }
 
-        if (Input.GetKey(KeyCode.S)) // ner
+        //Left
+        if (Input.GetKey(KeyCode.A))
         {
-            Vector3 characterPosition = transform.position;
-            characterPosition.y -= MovementSpeedPerSecond * Time.deltaTime;
-            transform.position = characterPosition;
+            characterVelocity.x -= MovementSpeedPerSecond;
         }
-        Vector3 CharacterVelocity = Myrigidbody2D.velocity;
-        CharacterVelocity.x = 0.0f;
+        //Right
+        if (Input.GetKey(KeyCode.D))
+        {
+            characterVelocity.x += MovementSpeedPerSecond;
+        }
+        myRigidBody.velocity = characterVelocity;
 
-
-        if (Input.GetKey(KeyCode.A)) // Left
-        {
-            CharacterVelocity.x -= MovementSpeedPerSecond;
-        }
-        if (Input.GetKey(KeyCode.D)) // right
-        {
-            CharacterVelocity.x += MovementSpeedPerSecond;
-        }
-    Myrigidbody2D.velocity = CharacterVelocity;
     }
 }
-

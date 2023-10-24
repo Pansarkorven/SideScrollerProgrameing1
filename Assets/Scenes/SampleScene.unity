@@ -140,6 +140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.429012
@@ -196,6 +200,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -258,6 +266,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -331,6 +343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.170986
@@ -392,6 +408,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -473,6 +490,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f7897d901851c4084944fc7a44268c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1018003540}
+  smoothSpeed: 0.125
 --- !u!4 &553929794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
@@ -488,7 +519,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
-      value: Mark amoungus (2)
+      value: jag gillar BARN
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -547,6 +582,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.170986
@@ -603,6 +642,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -661,6 +704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.829012
@@ -717,6 +764,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -780,6 +831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.100006
@@ -837,6 +892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.429012
@@ -891,7 +950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 901112707}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Segment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,6 +994,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1065,7 +1128,8 @@ Transform:
   m_LocalPosition: {x: -54.5, y: -23.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1808337552}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1018003542
@@ -1100,7 +1164,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.3890991}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1111,7 +1175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16, y: 32}
+  m_Size: {x: 16, y: 29.221802}
   m_EdgeRadius: 0
 --- !u!50 &1018003543
 Rigidbody2D:
@@ -1128,7 +1192,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 32
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1152,13 +1216,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c86080d62706fc4c95125bd740f4939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Myrigidbody2D: {fileID: 1018003543}
+  myRigidBody: {fileID: 1018003543}
   JumpingState: 1
-  MovementSpeedPerSecond: 120
-  GravityPerSecond: 140
-  GroundLevel: -100
-  JumpSpeedFactor: 3
-  JumpMaxHeight: 150
+  JumpSpeedFactor: 1.8
+  JumpMaxHeight: 50
+  JumpHeightDelta: 51
+  MovementSpeedPerSecond: 70
 --- !u!4 &1113584631 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
@@ -1206,6 +1269,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1279,6 +1346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 102.7
@@ -1336,6 +1407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 133.7
@@ -1392,6 +1467,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1475,6 +1554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.5709877
@@ -1525,6 +1608,97 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
   m_PrefabInstance: {fileID: 804961647}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1808337551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1808337552}
+  - component: {fileID: 1808337554}
+  - component: {fileID: 1808337553}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1808337552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808337551}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -13.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1018003540}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1808337553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808337551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e26d9d421edc44995f01d6534d3f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCharacterController: {fileID: 1018003544}
+--- !u!61 &1808337554
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808337551}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1814384907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1536,6 +1710,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1601,7 +1779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1925672992}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Segment (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1650,6 +1828,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1708,6 +1890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 118.1
@@ -1765,6 +1951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark amoungus (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.429012
@@ -1821,6 +2011,10 @@ PrefabInstance:
     - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_Name
       value: Mark amoungus (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 801466130940326762, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3414112197951267507, guid: 67dae8e8448e7f34d9768f1d188484ec, type: 3}
       propertyPath: m_LocalPosition.x
