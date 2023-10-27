@@ -6,9 +6,11 @@ public enum CharacterState // uppräknade lista av karaktär tillstånd
     Grounded = 0,
     Airborne = 1,
     Jumping = 2,
+    OutOfBounds = 3,
     Total
 
 }
+
 
 public class CharacterController : MonoBehaviour
 {

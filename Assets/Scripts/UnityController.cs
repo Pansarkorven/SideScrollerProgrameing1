@@ -6,7 +6,6 @@ public class UnityController : MonoBehaviour
 {
     //Refrence to rigidbody on same object
     public Rigidbody2D myRigidBody = null;
-
     public CharacterState JumpingState = CharacterState.Airborne;
     //Is Our character on the ground or in the air?
 

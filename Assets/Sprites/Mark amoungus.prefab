@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9101876824463298364}
   - component: {fileID: -5601164805233192988}
   - component: {fileID: 3895133483656444881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mark amoungus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
