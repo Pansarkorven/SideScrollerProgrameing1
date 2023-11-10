@@ -12,12 +12,15 @@ public enum CharacterState // uppräknade lista av karaktär tillstånd
 }
 
 
+
 public class CharacterController : MonoBehaviour
 {
 
+    public int JumpsAllowed = 0;
+
     public CharacterState JumpingState = CharacterState.Airborne; // är karaktären på marken eller i luften?
 
-
+    public float HP = 1.0f;
 
     public float MovementSpeedPerSecond = 120.0f; // gå
     public float GravityPerSecond = 140.0f; // falla
@@ -29,6 +32,8 @@ public class CharacterController : MonoBehaviour
     private float JumpHeightDelta = 0.0f;
 
     // Update is called once per frame
+  
+    
     void Update()
     {
         if (transform.position.y <= GroundLevel)
@@ -40,7 +45,7 @@ public class CharacterController : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.W) && JumpingState == CharacterState.Grounded) // up
+        if (Input.GetKey(KeyCode.W) && (JumpsAllowed < 0)) // up
         {
             JumpingState = CharacterState.Jumping;
             JumpHeightDelta = 0.0f;
@@ -85,6 +90,12 @@ public class CharacterController : MonoBehaviour
             if (gravityPosition.y < GroundLevel) { gravityPosition.y = GroundLevel; }
             transform.position = gravityPosition;
         }
+        
+    
+    
+    
+    
     }
+
 }
         

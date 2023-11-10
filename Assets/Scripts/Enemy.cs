@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
 
     public float MovmentSpeedPerSecond = 10.0f;
+    public float MovmentSign = 1.0f;
 
     public Rigidbody2D myRigidBody = null;
 
@@ -27,7 +28,7 @@ public class Enemy : MonoBehaviour
         characterVelocity.x = 0;
         
         //add velocity in character right direktion
-        characterVelocity += MovmentSpeedPerSecond * transform.right.normalized;
+        characterVelocity += MovmentSign * MovmentSpeedPerSecond * transform.right.normalized;
         
         //copy modfied velocity bakc onto rigidbody
         myRigidBody.velocity = characterVelocity;

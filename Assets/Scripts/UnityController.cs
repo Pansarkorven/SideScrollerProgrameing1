@@ -18,10 +18,12 @@ public class UnityController : MonoBehaviour
     public float JumpMaxHeight = 150.0f;
     [SerializeField]
     private float JumpHeightDelta = 0.0f;
+    public float HP = 1.0f;
 
     //Movement
     public float MovementSpeedPerSecond = 10.0f; //Movement Speed
 
+    //public List<Sprite> CharacterSprites = new List<Sprite> (); fungerar int just nu kommer fixa.
 
     private void Update()
     {
