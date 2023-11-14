@@ -1,6 +1,7 @@
 using System.Runtime.InteropServices;
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
 
 public class UnityController : MonoBehaviour
 {
@@ -18,12 +19,14 @@ public class UnityController : MonoBehaviour
     public float JumpMaxHeight = 150.0f;
     [SerializeField]
     private float JumpHeightDelta = 0.0f;
-    public float HP = 1.0f;
+    
+    public int HP = 1;
+    public SpriteRenderer mySpriteRenderer = null;  
 
     //Movement
     public float MovementSpeedPerSecond = 10.0f; //Movement Speed
 
-    //public List<Sprite> CharacterSprites = new List<Sprite> (); fungerar int just nu kommer fixa.
+    public List<Sprite> CharacterSprites = new List<Sprite>();
 
     private void Update()
     {
@@ -32,6 +35,23 @@ public class UnityController : MonoBehaviour
             JumpingState = CharacterState.Jumping; //Set character to jumping
             JumpHeightDelta = 0.0f; 
         }
+
+        mySpriteRenderer.sprite = CharacterSprites[HP -1];
+
+       //coppy out HP-1 to a new variable
+        int hpCopy = HP - 1;
+        //if hp less then 0 then set it to 0
+        if (hpCopy < 0) 
+        {  
+            hpCopy = 0; 
+        }
+        //id hp larger then or equal to the number of diffrent sprites in Charactersprites, set it to that number minus one(-1)
+        if (hpCopy >= CharacterSprites.Count)
+        {
+            hpCopy = CharacterSprites.Count -1 ;
+        }
+
+        mySpriteRenderer.sprite = CharacterSprites[hpCopy];
     }
 
 

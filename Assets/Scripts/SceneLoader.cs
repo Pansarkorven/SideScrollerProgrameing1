@@ -10,7 +10,10 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
-    
+    public void LoadScene (string sceneName)
+    { 
+    SceneManager.LoadScene (sceneName);
+    }
 
 
 }
